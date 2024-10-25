@@ -1,6 +1,6 @@
 import numpy as np
 
-data_directory = './test_code_1/3D_data_total_ver1.npz'
+data_directory = './test_code_1/3D_data_total_np1.npz'
 data = np.load(data_directory,allow_pickle=True)
 
 X_all = data['X_all']
