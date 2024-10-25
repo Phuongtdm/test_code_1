@@ -1,10 +1,13 @@
 import numpy as np
 
-data_directory = './test_code_1/3D_data_total_np1.npz'
+# data_directory = './test_code_1/3D_data_total_np1.npz'
 
-with np.load(data_directory, allow_pickle=True) as data:
-    X_all = data['X_all']
-    Y_all = data['Y_all'] 
+# with np.load(data_directory, allow_pickle=True) as data:
+#     X_all = data['X_all']
+#     Y_all = data['Y_all'] 
+
+X_all = np.load('./test_code_1/X_all.npy')
+Y_all = np.load('./test_code_1/Y_all.npy')
 
 X_all = X_all / 255
 
