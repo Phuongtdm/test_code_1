@@ -6,17 +6,17 @@ import numpy as np
 #     X_all = data['X_all']
 #     Y_all = data['Y_all'] 
 
-# X_all = np.load('./test_code_1/X_all.npy', allow_pickle=True)
-# Y_all = np.load('./test_code_1/Y_all.npy', allow_pickle=True)
-try:
-    data = np.load('./test_code_1/X_all.npy', allow_pickle=True)
-    print("Data loaded successfully:", data)
-except Exception as e:
-    print("Error loading data:", e)
+X_all = np.load('./test_code_1/X_all.npy', allow_pickle=True)
+Y_all = np.load('./test_code_1/Y_all.npy', allow_pickle=True)
+# try:
+#     data = np.load('./test_code_1/X_all.npy', allow_pickle=True)
+#     print("Data loaded successfully:", data)
+# except Exception as e:
+#     print("Error loading data:", e)
 
-# X_all = X_all / 255
+X_all = X_all / 255
 
-# X_train, X_test, y_train, y_test = train_test_split(X_all, Y_all, test_size=0.20, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X_all, Y_all, test_size=0.20, random_state=42)
 
-# print(X_train.shape)
-# print(X_test.shape)
+print(X_train.shape)
+print(X_test.shape)
