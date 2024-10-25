@@ -6,8 +6,8 @@ import numpy as np
 #     X_all = data['X_all']
 #     Y_all = data['Y_all'] 
 
-X_all = np.load('./test_code_1/X_all.npy')
-Y_all = np.load('./test_code_1/Y_all.npy')
+X_all = np.load('./test_code_1/X_all.npy', allow_pickle=True)
+Y_all = np.load('./test_code_1/Y_all.npy', allow_pickle=True)
 
 X_all = X_all / 255
 
