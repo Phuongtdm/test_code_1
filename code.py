@@ -8,11 +8,6 @@ import numpy as np
 
 X_all = np.load('./test_code_1/X_all.npy', allow_pickle=True)
 Y_all = np.load('./test_code_1/Y_all.npy', allow_pickle=True)
-# try:
-#     data = np.load('./test_code_1/X_all.npy', allow_pickle=True)
-#     print("Data loaded successfully:", data)
-# except Exception as e:
-#     print("Error loading data:", e)
 
 X_all = X_all / 255
 
