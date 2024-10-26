@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn.model_selection import train_test_split
 
 # data_directory = './test_code_1/3D_data_total_np1.npz'
 
